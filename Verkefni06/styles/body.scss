@@ -1,0 +1,57 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: var(--gutter);
+    width: calc(100% - (2 * var(--offset)));
+    max-width: var(--max-width);
+    margin: 0 auto;
+    grid-template-rows: auto;
+  }
+  
+  main {
+    display: grid;
+    gap: var(--gutter);
+    margin-bottom: var(--gutter);
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    
+  }
+  .info-boxes {
+    display: grid;
+    row-gap: var(--gutter);
+  }
+  .cards {
+    display: grid;
+    gap: var(--gutter);
+  }
+
+
+body {
+    color: var(--color-text);
+    font-size: var(--font-base-body-px);
+    line-height: 1.5;
+    font-family: var(--font-family-base);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-family-heading);
+  }
+  
+  img {
+    max-width: 100%;
+  }
